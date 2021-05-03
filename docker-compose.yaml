@@ -11,7 +11,7 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: test
     ports:
-      - 3308:3306
+      - 3306:3306
     networks:
       - network
     volumes:
@@ -23,7 +23,7 @@ services:
     image: nginx:latest
     restart: always
     ports:
-      - 81:80
+      - 80:80
     networks:
       - network
     volumes:
